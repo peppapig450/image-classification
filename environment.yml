@@ -1,75 +1,90 @@
-name: base
+name: image_classification
 channels:
   - defaults
 dependencies:
-  - anaconda-anon-usage=0.4.4=py312hd6b623d_100
-  - archspec=0.2.3=pyhd3eb1b0_0
-  - boltons=23.0.0=py312hca03da5_0
-  - brotli-python=1.0.9=py312h313beb8_8
+  - blas=1.0=openblas
   - bzip2=1.0.8=h80987f9_6
   - c-ares=1.19.1=h80987f9_0
-  - ca-certificates=2024.3.11=hca03da5_0
-  - certifi=2024.2.2=py312hca03da5_0
-  - cffi=1.16.0=py312h80987f9_1
-  - charset-normalizer=2.0.4=pyhd3eb1b0_0
-  - conda=24.4.0=py312hca03da5_0
-  - conda-content-trust=0.2.0=py312hca03da5_1
-  - conda-libmamba-solver=24.1.0=pyhd3eb1b0_0
-  - conda-package-handling=2.2.0=py312hca03da5_1
-  - conda-package-streaming=0.9.0=py312hca03da5_0
-  - cryptography=42.0.5=py312hd4332d6_1
-  - distro=1.9.0=py312hca03da5_0
+  - ca-certificates=2024.7.2=hca03da5_0
+  - cairo=1.16.0=h302bd0f_5
+  - cyrus-sasl=2.1.28=h9131b1a_1
+  - eigen=3.4.0=h48ca7d4_0
   - expat=2.6.2=h313beb8_0
-  - fmt=9.1.0=h48ca7d4_1
+  - ffmpeg=4.2.2=h04105a8_0
+  - fontconfig=2.14.1=hee714a5_2
+  - freetype=2.12.1=h1192e45_0
+  - gettext=0.21.0=h13f89a0_1
+  - glib=2.78.4=h313beb8_0
+  - glib-tools=2.78.4=h313beb8_0
+  - gmp=6.2.1=hc377ac9_3
+  - gnutls=3.6.15=h887c41c_0
+  - graphite2=1.3.14=hc377ac9_1
+  - gst-plugins-base=1.14.1=h313beb8_1
+  - gstreamer=1.14.1=h80987f9_1
+  - harfbuzz=4.3.0=he9eebac_2
+  - hdf5=1.12.1=h05c076b_3
   - icu=73.1=h313beb8_0
-  - idna=3.7=py312hca03da5_0
-  - jsonpatch=1.33=py312hca03da5_1
-  - jsonpointer=2.1=pyhd3eb1b0_0
+  - joblib=1.4.2=py312hca03da5_0
+  - jpeg=9e=h80987f9_2
   - krb5=1.20.1=hf3e1bf2_1
-  - libarchive=3.6.2=h62fee54_3
+  - lame=3.100=h1a28f6b_0
+  - lerc=3.0=hc377ac9_0
+  - libabseil=20240116.2=cxx17_h313beb8_0
+  - libclang=14.0.6=default_h1b80db6_1
+  - libclang13=14.0.6=default_h24352ff_1
   - libcurl=8.7.1=h3e2b118_0
   - libcxx=14.0.6=h848a8c0_0
+  - libdeflate=1.17=h80987f9_1
   - libedit=3.1.20230828=h80987f9_0
   - libev=4.33=h1a28f6b_1
   - libffi=3.4.4=hca03da5_1
+  - libgfortran=5.0.0=11_3_0_hca03da5_28
+  - libgfortran5=11.3.0=h009349e_28
+  - libglib=2.78.4=h0a96307_0
   - libiconv=1.16=h80987f9_3
-  - libmamba=1.5.8=haeffa04_2
-  - libmambapy=1.5.8=py312h1c5506f_2
+  - libidn2=2.3.4=h80987f9_0
+  - libllvm14=14.0.6=h7ec7a93_3
   - libnghttp2=1.57.0=h62f6fdd_0
-  - libsolv=0.7.24=h514c7bf_1
+  - libopenblas=0.3.21=h269037a_0
+  - libopus=1.3=h1a28f6b_1
+  - libpng=1.6.39=h80987f9_0
+  - libpq=12.17=h02f6b3c_0
+  - libprotobuf=4.25.3=h514c7bf_0
   - libssh2=1.11.0=h3e2b118_0
+  - libtasn1=4.19.0=h80987f9_0
+  - libtiff=4.5.1=h313beb8_0
+  - libunistring=0.9.10=h1a28f6b_0
+  - libvpx=1.10.0=hc377ac9_0
+  - libwebp-base=1.3.2=h80987f9_0
   - libxml2=2.10.4=h0b34f26_2
+  - llvm-openmp=14.0.6=hc6e5704_0
   - lz4-c=1.9.4=h313beb8_1
-  - menuinst=2.0.2=py312hca03da5_1
+  - mysql=5.7.24=ha71a6ea_2
   - ncurses=6.4=h313beb8_0
-  - openssl=3.0.13=h1a28f6b_1
-  - packaging=23.2=py312hca03da5_0
+  - nettle=3.7.3=h84b5d62_1
+  - numpy=1.26.4=py312h7f4fdc5_0
+  - numpy-base=1.26.4=py312he047099_0
+  - opencv=4.10.0=py312h266819b_0
+  - openh264=1.8.0=h98b2900_0
+  - openjpeg=2.4.0=h0ed58ac_2
+  - openssl=3.0.14=h80987f9_0
   - pcre2=10.42=hb066dcc_1
   - pip=24.0=py312hca03da5_0
-  - platformdirs=3.10.0=py312hca03da5_0
-  - pluggy=1.0.0=py312hca03da5_1
+  - pixman=0.40.0=h1a28f6b_0
   - pybind11-abi=5=hd3eb1b0_0
-  - pycosat=0.6.6=py312h80987f9_1
-  - pycparser=2.21=pyhd3eb1b0_0
-  - pysocks=1.7.1=py312hca03da5_0
-  - python=3.12.3=h99e199e_1
-  - python.app=3=py312h80987f9_0
+  - python=3.12.4=h99e199e_1
+  - qt-main=5.15.2=h0917680_10
   - readline=8.2=h1a28f6b_0
-  - reproc=14.2.4=h313beb8_2
-  - reproc-cpp=14.2.4=h313beb8_2
-  - requests=2.31.0=py312hca03da5_1
-  - ruamel.yaml=0.17.21=py312h80987f9_0
+  - scikit-learn=1.5.1=py312hd77ebd4_0
+  - scipy=1.13.1=py312ha409365_0
   - setuptools=69.5.1=py312hca03da5_0
   - sqlite=3.45.3=h80987f9_0
+  - threadpoolctl=3.5.0=py312h989b03a_0
   - tk=8.6.14=h6ba3021_0
-  - tqdm=4.66.2=py312h989b03a_0
-  - truststore=0.8.0=py312hca03da5_0
   - tzdata=2024a=h04d1e81_0
-  - urllib3=2.1.0=py312hca03da5_1
   - wheel=0.43.0=py312hca03da5_0
+  - x264=1!152.20180806=h1a28f6b_0
   - xz=5.4.6=h80987f9_1
-  - yaml-cpp=0.8.0=h313beb8_1
   - zlib=1.2.13=h18a0788_1
-  - zstandard=0.22.0=py312h1a4646a_0
   - zstd=1.5.5=hd90d995_2
-prefix: /opt/homebrew/Caskroom/miniconda/base
+prefix: /opt/homebrew/Caskroom/miniconda/base/envs/image_classification
