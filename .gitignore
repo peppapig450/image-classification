@@ -2,3 +2,4 @@ data/raw/PetImages/Cat/*.jpg
 data/raw/PetImages/Dog/*.jpg
 data/raw/PetImages/Dog/12.jpg
 *.zip
+data/intermediate/
