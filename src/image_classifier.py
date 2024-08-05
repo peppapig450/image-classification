@@ -35,7 +35,7 @@ class ImageClassifier:
         df = pd.DataFrame(data)
         return df
 
-    def extract_dataset(self, zip_file_path: PathLike):
+    def extract_dataset(self, zip_file_gpath: PathLike):
         with tempfile.TemporaryDirectory() as tempdir:
             with zipfile.ZipFile(zip_file_path, "r") as zip_ref:
                 zip_ref.extractall(tempdir)
